@@ -1,0 +1,14 @@
+{
+  "name": "Gdd11WebGameSolver",
+  "version": "1.0",
+  "description": "solve all web games on gdd11 ",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://gdd-2011-quiz-japan.appspot.com/webgame/problem*"
+      ],
+      "js": ["jquery.js", "solver.js"]
+    }
+  ],
+  "permissions": []
+}

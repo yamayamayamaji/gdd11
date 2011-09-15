@@ -1,0 +1,1 @@
+javascript:(function(){eval('var cards = [' + document.scripts[2].text.replace(/(\r|\n)/g,'').replace(/.+conc\.setup\(\[([^\]]+)].+/g, '$1') + ']');var fliped=[];for (var i=0, len=cards.length; i<len; i++) {if (fliped.indexOf(i)>=0) { continue; }conc.flip(i);for (var j=i+1; j<len; j++) {if (cards[i]==cards[j]) {conc.flip(j);fliped.push(i);fliped.push(j);break;}}}})();
